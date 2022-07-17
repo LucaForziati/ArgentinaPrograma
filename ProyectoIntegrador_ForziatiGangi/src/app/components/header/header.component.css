@@ -1,0 +1,9 @@
+.navbar, .navbar-expand-lg{
+    background-color: #0F1626;
+}
+
+.redesSociales{
+    float: right;
+    margin-top: 25%;
+    padding: 5px;
+}

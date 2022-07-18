@@ -18,7 +18,7 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
 .page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
 
 .card-section { position: relative; bottom: 60px; }
-.card-block { padding: 40px; box-shadow: 1px 1px 1px grey;}
+.card-block { padding: 40px; box-shadow: 1px 1px 1px grey; }
 .section-title { margin-bottom: 60px; }
 
 
@@ -38,6 +38,6 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
     }
 }
 
-.texto{
-    
+.app-banner{
+    background-color: #AB987A;
 }

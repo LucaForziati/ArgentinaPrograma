@@ -7,3 +7,23 @@
     margin-top: 25%;
     padding: 5px;
 }
+
+
+.efecto_mouse {
+    display: inline-block;
+    position: relative;
+    color: rgb(201, 41, 41);
+    text-decoration: none;
+    }
+    .efecto_mouse:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+    .efecto_mouse:hover:after {
+    width: 100%;
+    background: rgb(179, 50, 50);
+    }

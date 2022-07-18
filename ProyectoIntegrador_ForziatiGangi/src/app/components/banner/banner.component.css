@@ -18,5 +18,26 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
 .page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
 
 .card-section { position: relative; bottom: 60px; }
-.card-block { padding: 80px; }
+.card-block { padding: 40px; box-shadow: 1px 1px 1px grey;}
 .section-title { margin-bottom: 60px; }
+
+
+@media (min-width: 992px){
+    .imgRedonda {
+        width:350px;
+        height:350px;
+        border-radius:200px;
+    } 
+}
+@media (max-width: 991px){
+    .imgRedonda {
+        width:250px;
+        height:250px;
+        border-radius:150px;
+        box-shadow: 1px 1px 1px gray;
+    }
+}
+
+.texto{
+    
+}

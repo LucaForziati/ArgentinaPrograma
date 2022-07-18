@@ -1,0 +1,46 @@
+.section, .container, .fondo{
+    background-color: #AB987A;
+}
+
+.cc-education .h5 {
+    margin-bottom: 0;
+}
+  
+.cc-education .cc-education-header {
+    padding-top: 60px;
+    padding-right: 0;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.card {
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+
+.card .card-body {
+    min-height: 190px;
+  }
+
+.card-color{
+    background-color: #0F1626;
+}
+
+h4 + .category,
+h4.title + .category, .h4 + .category,
+.h4.title + .category {
+  margin-top: -10px;
+}
+
+.title {
+    font-weight: 700;
+  }
+

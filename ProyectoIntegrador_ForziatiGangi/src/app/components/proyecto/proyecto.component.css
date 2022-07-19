@@ -1,0 +1,13 @@
+.card-img-top {
+        max-width: 1500px; /* or to whatever you want here */
+        max-height: 200px; /* or to whatever you want here */
+        padding: 5px;
+}
+
+.card{
+    box-shadow: 1px 1px 1px grey;
+}
+
+.fondo{
+    background-color: #AB987A;
+}

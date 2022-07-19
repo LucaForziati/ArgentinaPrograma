@@ -44,3 +44,6 @@ h4.title + .category, .h4 + .category,
     font-weight: 700;
   }
 
+.card{
+    box-shadow: 3px 3px 3px grey;
+  }

@@ -1,3 +1,7 @@
 .section{
     background-color: #AB987A;
 }
+
+.card{
+    box-shadow: 3px 3px 3px grey;
+  }

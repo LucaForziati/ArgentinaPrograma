@@ -41,3 +41,7 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
 .app-banner{
     background-color: #AB987A;
 }
+
+.card{
+    box-shadow: 3px 3px 3px grey;
+}

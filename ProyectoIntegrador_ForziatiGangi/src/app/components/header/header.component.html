@@ -2,13 +2,16 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="../../../assets/logos_header/APLogo.png"  height="100px"></a>
         <div class = "d-flex">
+
             <a  href="#" class = "efecto_mouse"><img src="../../../assets/logos_header/facebook.png" height="40px" class = "redesSociales"></a>
             <a  href="#" class = "efecto_mouse"><img src="../../../assets/logos_header/instagram.png" height="40px" class = "redesSociales"></a>
             <a  href="#" class = "efecto_mouse"><img src="../../../assets/logos_header/twitter.png" height="40px" class = "redesSociales"></a>
             <a  href="#" class = "efecto_mouse"><img src="../../../assets/logos_header/github.png" height="40px" class = "redesSociales"></a>
             <a  href="#" class = "efecto_mouse"><img src="../../../assets/logos_header/linkedin.png" height="40px" class = "redesSociales"></a>
+            <h1><a href="/login" *ngIf = "!isLogged"><i class="bi bi-door-closed"></i></a></h1>
+            <h1><a href="" (click) = "onLogOut()" *ngIf = "isLogged"><i class="bi bi-door-open"></i></a></h1>
 
-            <a class = "efecto_mouse" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../../../assets/logos_header/facebook.png" height="40px" class = "redesSociales"></a>
+            <h1 class = "boton-costado"><a class = "efecto_mouse" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></a></h1>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">

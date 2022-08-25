@@ -2,7 +2,6 @@
 <div class="section" id="skill">
   <div class="container">
     <div class="h4 text-center mb-4 title">Hard and Soft Skills</div>
-    <button type ="button" class="h4 text-center mb-4 title" routerLink = "/nuevahab" *ngIf = "isLogged">Agregar habilidad</button>
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="card-body">
         <div class="row"  >
@@ -22,9 +21,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
+    <p></p>
+    <button type ="button" class="btn btn-secondary" routerLink = "/nuevahab" *ngIf = "isLogged" style="width: 100px; height: 50px;"><h3><i class="bi bi-plus-circle"></i></h3></button>
   </div>
 </div>
 </div>

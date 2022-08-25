@@ -8,13 +8,19 @@ import com.portfolio.luca.Entity.Persona;
 import com.portfolio.luca.Interface.IPersonaService;
 import com.portfolio.luca.Repository.IPersonaRepository;
 import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class ImpPersonaService implements IPersonaService{
     
     @Autowired IPersonaRepository ipersonaRepository;
+    
+    @Autowired
+    IPersonaRepository rPersona;
 
     @Override
     public List<Persona> getPersona() {
@@ -38,4 +44,11 @@ public class ImpPersonaService implements IPersonaService{
         return persona;
     }
     
+    public Optional<Persona> getOne(Long id){
+        return rPersona.findById(id);
+    }
+    
+    public boolean existsById(Long id){
+        return rPersona.existsById(id);
+    }
 }

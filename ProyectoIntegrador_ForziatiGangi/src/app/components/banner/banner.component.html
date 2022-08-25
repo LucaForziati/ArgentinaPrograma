@@ -26,12 +26,15 @@
                             <div class="section-title mb-0">
                                 <div class = "row align-items-center">
                                     <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 text-center">
-                                        <img src="../../../assets/foto_perfil/foto_perfil.jpg" class="imgRedonda img-fluid">
+                                        <img [src]="persona.img" class="imgRedonda img-fluid">
                                         
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 text-center">
                                         <h2 class = "texto">{{persona.nombre}} {{persona.apellido}}</h2>
                                         <p></p>
+                                        <div class="col-lg-1" *ngIf = "isLogged"> 
+                                            <button class = "btn btn-warning" routerLink = "/editper//{{persona.id}}"><i class="bi bi-pencil-fill"></i></button>        
+                                        </div>
                                         <figcaption class="blockquote-footer">
                                             <cite title="Source Title">Full Stack Developer</cite>
                                         </figcaption>

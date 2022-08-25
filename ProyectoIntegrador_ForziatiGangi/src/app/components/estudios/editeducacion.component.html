@@ -1,3 +1,4 @@
+<!--
 <div class = "container" *ngIf = "educacion">
     <div class = "row">
         <div>
@@ -28,3 +29,59 @@
 
     </div>
 </div>
+-->
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-12 col-lg-12 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                    <div class = "container" *ngIf = "educacion">
+                        
+                            <div>
+                                <form (ngSubmit) = "onUpdate()" novalidate #f = "ngForm">
+                                    <div class="form-group">
+                                        <label for="nombreEdu">Editar nombre estudio</label>
+                                        <input type="text" class="form-control" id="nombreEdu" name = "nombreEdu" [(ngModel)] = "educacion.nombreEdu" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="agnoInicio">Editar año de inicio</label>
+                                        <input type="text" class="form-control" id="agnoInicio" name = "agnoInicio" [(ngModel)] = "educacion.agnoInicio" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="agnoFinal">Editar año de final</label>
+                                        <input type="text" class="form-control" id="agnoFinal" name = "agnoFinal" [(ngModel)] = "educacion.agnoFinal" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="institucion">Editar nombre Institucion</label>
+                                        <input type="text" class="form-control" id="institucion" name = "institucion" [(ngModel)] = "educacion.institucion" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="descripcionEdu">Editar descripcion estudio</label>
+                                        <input type="text" class="form-control" id="descripcionEdu" name = "descripcionEdu" [(ngModel)] = "educacion.descripcionEdu" required>
+                                    </div>
+                                    <p></p>
+                                    <button class = "btn btn-primary">Editar educacion</button>
+                                    <button type ="button" class="btn btn-primary" routerLink = "/" style="margin-left: 10px;">Voler</button>
+                                </form>
+                            </div>
+                    
+                        
+                    </div>
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

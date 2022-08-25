@@ -1,3 +1,4 @@
+<!--
 <div class = "container">
     <div class = "row">
         <div>
@@ -28,3 +29,59 @@
 
     </div>
 </div>
+-->
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-12 col-lg-12 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                    <div class = "container">
+                        
+                            <div>
+                                <form (ngSubmit) = "onCreate()" novalidate #f = "ngForm">
+                                    <div class="form-group">
+                                        <label for="nombreEdu">Nombre estudio</label>
+                                        <input type="text" class="form-control" id="nombreEdu" name = "nombreEdu" [(ngModel)] = "nombreEdu" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="agnoInicio">Año de inicio</label>
+                                        <input type="text" class="form-control" id="agnoInicio" name = "agnoInicio" [(ngModel)] = "agnoInicio" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="agnoFinal">Año de final</label>
+                                        <input type="text" class="form-control" id="agnoFinal" name = "agnoFinal" [(ngModel)] = "agnoFinal" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="institucion">Nombre Institucion</label>
+                                        <input type="text" class="form-control" id="institucion" name = "institucion" [(ngModel)] = "institucion" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="descripcionEdu">Descripcion estudio</label>
+                                        <input type="text" class="form-control" id="descripcionEdu" name = "descripcionEdu" [(ngModel)] = "descripcionEdu" required>
+                                    </div>
+                                    <p></p>
+                                    <button class = "btn btn-primary">Agregar educacion</button>
+                                    <button type ="button" class="btn btn-primary" routerLink = "/" style="margin-left: 10px;">Voler</button>
+                                </form>
+                            </div>
+                    
+                        
+                    </div>
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

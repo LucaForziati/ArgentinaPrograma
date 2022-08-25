@@ -2,7 +2,7 @@
 <div class="section" id="experience">
     <div class="container py-2 cc-experience">
         <div class="h4 text-center mb-4 title">Work Experience</div>
-        <button type ="button" class="h4 text-center mb-4 title" routerLink = "/nuevaexp" *ngIf = "isLogged">Agregar experiencia</button>
+
                 <div class="row" *ngFor = "let Experiencia of expe">
                     <ul class="timeline" data-aos="fade-left">
                         <li>
@@ -27,6 +27,7 @@
                         </li>   
                     </ul>
                 </div>
+                <button type ="button" class="btn btn-secondary" routerLink = "/nuevaexp" *ngIf = "isLogged" style="width: 100px; height: 50px;"><h3><i class="bi bi-plus-circle"></i></h3></button>
     </div>
 
 </div>

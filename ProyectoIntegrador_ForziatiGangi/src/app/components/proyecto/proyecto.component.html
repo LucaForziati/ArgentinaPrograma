@@ -4,57 +4,21 @@
       <div class="container">
         <div class="h4 text-center mb-4 title">Proyectos</div>
         
-        <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-in">
+        <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-in" *ngFor = "let Proyecto of proyecto">
             <div class="col">
               <div class="card h-100">
-                <img src="../../../assets/proyectos/spacex.jpg" class="card-img-top" alt="...">
+                <img [src]="Proyecto.imagen" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Proyecto 1</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aperiam debitis quos, iusto illum cumque non quasi itaque dicta corrupti, tenetur architecto odit illo blanditiis consectetur natus ab eius ipsum.</p>
+                  <h5 class="card-title">{{Proyecto.nombreP}}</h5>
+                  <p class="card-text">{{Proyecto.descripcionP}}</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted"><a href="google.com.ar">Link al proyecto</a></small>
+                  <small class="text-muted"><a [href]="Proyecto.linkP">Link al proyecto</a></small>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="../../../assets/proyectos/spacex.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 2</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita natus officiis ea. Quaerat numquam similique assumenda rem itaque? Ut eos fuga tenetur excepturi maiores sunt adipisci, quod commodi repellat!</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted"><a href="google.com.ar">Link al proyecto</a></small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="../../../assets/proyectos/spacex.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Proyecto 3</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nam distinctio rem architecto voluptatum voluptatem eum, necessitatibus asperiores perspiciatis, ducimus obcaecati consequuntur explicabo id dolore earum. Inventore delectus saepe voluptatibus!</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted"><a href="google.com.ar">Link al proyecto</a></small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                  <img src="../../../assets/proyectos/spacex.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Proyecto 4</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae nulla deleniti fugit, dolorem sed magnam veniam maxime rerum maiores cum itaque omnis numquam ea ipsum impedit minus officia cumque porro?</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted"><a href="google.com.ar">Link al proyecto</a></small>
-                  </div>
-                </div>
-              </div>
           </div>
-        
+          <button type ="button" class="btn btn-secondary" routerLink = "/nuevopro" *ngIf = "isLogged" style="width: 100px; height: 50px;"><h3><i class="bi bi-plus-circle"></i></h3></button>
         </div>
     </div>
 </div>

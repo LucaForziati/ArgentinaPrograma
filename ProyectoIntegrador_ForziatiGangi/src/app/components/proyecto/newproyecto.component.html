@@ -1,0 +1,48 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-12 col-lg-12 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                    <div class = "container">
+                        
+                            <div>
+                                <form (ngSubmit) = "onCreate()" novalidate #f = "ngForm">
+                                    <div class="form-group">
+                                        <label for="nombreP">Nombre proyecto</label>
+                                        <input type="text" class="form-control" id="nombreP" name = "nombreP" [(ngModel)] = "nombreP" required>
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="descripcionP">Descripcion proyecto</label>
+                                        <input type="text" class="form-control" id="descripcionP" name = "descripcionP" [(ngModel)] = "descripcionP" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="imagen">Imagen proyecto (copiar URL)</label>
+                                        <input type="text" class="form-control" id="imagen" name = "imagen" [(ngModel)] = "imagen" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="linkP">URL proyecto</label>
+                                        <input type="text" class="form-control" id="linkP" name = "linkP" [(ngModel)] = "linkP" required>
+                                    </div>
+                                    <p></p>
+                                    <button class = "btn btn-primary">Agregar proyecto</button>
+                                    <button type ="button" class="btn btn-primary" routerLink = "/" style="margin-left: 10px;">Voler</button>
+                                </form>
+                            </div>
+                    
+                        
+                    </div>
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

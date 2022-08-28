@@ -20,7 +20,8 @@ export class NewproyectoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate(): void{
+  onCreate(): void{ 
+
     const proyecto = new Proyecto(this.nombreP, this.descripcionP, this.imagen, this.linkP);
     this.proyectoS.save(proyecto).subscribe(
       data =>{
@@ -32,5 +33,8 @@ export class NewproyectoComponent implements OnInit {
       }
     )
   }
+
+
+
 
 }

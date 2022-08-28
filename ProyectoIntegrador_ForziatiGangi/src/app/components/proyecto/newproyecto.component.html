@@ -10,7 +10,7 @@
                     <div class = "container">
                         
                             <div>
-                                <form (ngSubmit) = "onCreate()" novalidate #f = "ngForm">
+                                <form (ngSubmit) = "onCreate()" novalidate #f = "ngForm" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="nombreP">Nombre proyecto</label>
                                         <input type="text" class="form-control" id="nombreP" name = "nombreP" [(ngModel)] = "nombreP" required>

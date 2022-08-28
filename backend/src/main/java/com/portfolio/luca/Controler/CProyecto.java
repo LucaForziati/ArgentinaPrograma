@@ -8,7 +8,13 @@ import com.portfolio.luca.Dto.dtoProyecto;
 import com.portfolio.luca.Entity.Proyecto;
 import com.portfolio.luca.Security.Controller.Mensaje;
 import com.portfolio.luca.Service.SProyecto;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +27,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/proyecto")
@@ -66,6 +74,7 @@ public class CProyecto {
         if(sProyecto.existsByNombreP(dtoproyecto.getNombreP())){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
+
         
         Proyecto proyecto = new Proyecto(
                 dtoproyecto.getNombreP(), dtoproyecto.getDescripcionP(), dtoproyecto.getImagen(), dtoproyecto.getLinkP()

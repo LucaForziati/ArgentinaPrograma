@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="page-caption">
-                        <h1 class="page-title">Welcome to my portfolio!</h1>
+                        <h1 class="page-title">¡Bienvenido a mi portfolio!</h1>
                         <h1 class="page-title" *ngIf = "!isLogged"><a href="/login" type="button" class="btn btn-dark" >Iniciar Sesion</a></h1>
                     </div>
                 </div>
@@ -35,10 +35,7 @@
                                         <div class="col-lg-1" *ngIf = "isLogged"> 
                                             <button class = "btn btn-warning" routerLink = "/editper//{{persona.id}}"><i class="bi bi-pencil-fill"></i></button>        
                                         </div>
-                                        <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Full Stack Developer</cite>
-                                        </figcaption>
-                                        <button type="button" class="btn btn-outline-secondary">About me</button>
+                                        <a type="button" href="#acerca" class="btn btn-outline-secondary">About me</a>
                                     </div>
                                 </div>
                                

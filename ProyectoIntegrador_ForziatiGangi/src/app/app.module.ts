@@ -26,6 +26,7 @@ import { EdithabilidadComponent } from './components/skills/edithabilidad.compon
 import { EditpersonaComponent } from './components/banner/editpersona.component';
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
+import { EditAcercaComponent } from './components/acerca-de/edit-acerca.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { EditproyectoComponent } from './components/proyecto/editproyecto.compon
     EdithabilidadComponent,
     EditpersonaComponent,
     NewproyectoComponent,
-    EditproyectoComponent
+    EditproyectoComponent,
+    EditAcercaComponent
   ],
   imports: [
     BrowserModule,

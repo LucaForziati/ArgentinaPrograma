@@ -7,34 +7,36 @@
               <div class="col-md-12 col-lg-12 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
   
-                    <div class = "container" *ngIf = "proyecto">
-                        
+                    <div class = "container" *ngIf = "acerca">
+        
                             <div>
                                 <form (ngSubmit) = "onUpdate()" novalidate #f = "ngForm">
                                     <div class="form-group">
-                                        <label for="nombreP">Nombre proyecto</label>
-                                        <input type="text" class="form-control" id="nombreP" name = "nombreP" [(ngModel)] = "proyecto.nombreP" required>
+                                        <label for="acerca">Actualizar acerca</label>
+                                        <input type="text" class="form-control" id="acerca" name = "acerca" [(ngModel)] = "acerca.acerca" required maxlength="1000">
                                     </div>
                                     <p></p>
                                     <div class="form-group">
-                                        <label for="descripcionP">Descripcion proyecto</label> <!-- -->
-                                        <input type="text" class="form-control" id="descripcionP" name = "descripcionP" [(ngModel)] = "proyecto.descripcionP" required maxlength="500">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="imagen">Imagen proyecto (copiar URL)</label>
-                                        <input type="text" class="form-control" id="imagen" name = "imagen" [(ngModel)] = "proyecto.imagen" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="linkP">URL proyecto</label>
-                                        <input type="text" class="form-control" id="linkP" name = "linkP" [(ngModel)] = "proyecto.linkP" required>
+                                        <label for="nacimiento">Actualizar nacimiento</label>
+                                        <input type="text" class="form-control" id="nacimiento" name = "nacimiento" [(ngModel)] = "acerca.nacimiento" required maxlength="75">
                                     </div>
                                     <p></p>
-                                    <button class = "btn btn-primary">Modificar proyecto</button>
+                                    <div class="form-group">
+                                        <label for="email">Actualizar email</label>
+                                        <input type="text" class="form-control" id="email" name = "email" [(ngModel)] = "acerca.email" required maxlength="75">
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="lenguaje">Actualizar lenguaje</label>
+                                        <input type="text" class="form-control" id="lenguaje" name = "lenguaje" [(ngModel)] = "acerca.lenguaje" required maxlength="75">
+                                    </div>
+                                    <p></p>
+                                    <button class = "btn btn-primary">Actualizar acerca</button>
                                     <button type ="button" class="btn btn-primary" routerLink = "/" style="margin-left: 10px;">Voler</button>
                                 </form>
-                            </div>
-                    
-                        
+                            
+    
+                        </div>
                     </div>
   
   

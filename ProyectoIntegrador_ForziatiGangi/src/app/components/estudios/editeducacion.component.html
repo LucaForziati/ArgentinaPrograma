@@ -45,27 +45,27 @@
                                 <form (ngSubmit) = "onUpdate()" novalidate #f = "ngForm">
                                     <div class="form-group">
                                         <label for="nombreEdu">Editar nombre estudio</label>
-                                        <input type="text" class="form-control" id="nombreEdu" name = "nombreEdu" [(ngModel)] = "educacion.nombreEdu" required>
+                                        <input type="text" class="form-control" id="nombreEdu" name = "nombreEdu" [(ngModel)] = "educacion.nombreEdu" required maxlength="75">
                                     </div>
                                     <p></p>
                                     <div class="form-group">
                                         <label for="agnoInicio">Editar año de inicio</label>
-                                        <input type="text" class="form-control" id="agnoInicio" name = "agnoInicio" [(ngModel)] = "educacion.agnoInicio" required>
+                                        <input type="text" class="form-control" id="agnoInicio" name = "agnoInicio" [(ngModel)] = "educacion.agnoInicio" required maxlength="10">
                                     </div>
                                     <p></p>
                                     <div class="form-group">
                                         <label for="agnoFinal">Editar año de final</label>
-                                        <input type="text" class="form-control" id="agnoFinal" name = "agnoFinal" [(ngModel)] = "educacion.agnoFinal" required>
+                                        <input type="text" class="form-control" id="agnoFinal" name = "agnoFinal" [(ngModel)] = "educacion.agnoFinal" required maxlength="10">
                                     </div>
                                     <p></p>
                                     <div class="form-group">
                                         <label for="institucion">Editar nombre Institucion</label>
-                                        <input type="text" class="form-control" id="institucion" name = "institucion" [(ngModel)] = "educacion.institucion" required>
+                                        <input type="text" class="form-control" id="institucion" name = "institucion" [(ngModel)] = "educacion.institucion" required maxlength="75">
                                     </div>
                                     <p></p>
                                     <div class="form-group">
                                         <label for="descripcionEdu">Editar descripcion estudio</label>
-                                        <input type="text" class="form-control" id="descripcionEdu" name = "descripcionEdu" [(ngModel)] = "educacion.descripcionEdu" required>
+                                        <input type="text" class="form-control" id="descripcionEdu" name = "descripcionEdu" [(ngModel)] = "educacion.descripcionEdu" required maxlength="500">
                                     </div>
                                     <p></p>
                                     <button class = "btn btn-primary">Editar educacion</button>

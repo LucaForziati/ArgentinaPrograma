@@ -8,7 +8,7 @@ import { Acerca } from '../model/acerca';
 })
 export class AcercaService {
 
-  URL = 'http://localhost:8080/acerca/';
+  URL = 'https://backendarp.herokuapp.com/acerca/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -34,7 +34,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/proyecto")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendarp.web.app")
 public class CProyecto {
     
     @Autowired

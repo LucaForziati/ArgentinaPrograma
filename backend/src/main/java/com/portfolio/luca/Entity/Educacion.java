@@ -4,6 +4,7 @@
  */
 package com.portfolio.luca.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,8 +18,12 @@ public class Educacion {
     private int id;
     private String nombreEdu;
     private String institucion;
+    
+    @Column(length = 1000)
     private String descripcionEdu;
+    
     private String agnoInicio;
+    
     private String agnoFinal;
     
     //Constructor

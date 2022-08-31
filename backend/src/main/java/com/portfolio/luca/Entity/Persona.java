@@ -4,6 +4,7 @@
  */
 package com.portfolio.luca.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -30,7 +31,7 @@ public class Persona {
     @Size(min = 1, max = 50, message = "El campo no cumple con la logitud solicitada")
     private String apellido;
     
-    @Size(max = 500)
+    @Column(length = 1000)
     private String img;
     
 }

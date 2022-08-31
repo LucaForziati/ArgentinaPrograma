@@ -4,6 +4,7 @@
  */
 package com.portfolio.luca.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,13 +21,13 @@ public class Proyecto {
     @Size(min = 1, max = 100, message = "El campo no cumple con la logitud solicitada")
     private String nombreP;
     
-    @Size(min = 1, max = 500, message = "El campo no cumple con la logitud solicitada")
+    @Column(length = 1000)
     private String descripcionP;
     
-    @Size(max = 500)
+    @Column(length = 1000)
     private String imagen;
     
-    @Size(max = 500)
+    @Column(length = 1000)
     private String linkP;
 
     public Proyecto() {

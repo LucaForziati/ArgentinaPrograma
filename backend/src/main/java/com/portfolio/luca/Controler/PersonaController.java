@@ -36,7 +36,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendarp.web.app")
 public class PersonaController {
     
     @Autowired 
@@ -83,7 +83,7 @@ public class PersonaController {
     */
     @GetMapping("/personas/traer/perfil")
     public Persona findPersona(){
-        return ipersonaService.findPersona((long)4);
+        return ipersonaService.findPersona((long)1);
     }
     
     
